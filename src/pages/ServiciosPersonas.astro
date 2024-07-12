@@ -1,0 +1,77 @@
+---
+import { Icon } from "astro-icon/components";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import heroImage from "assets/personas2.webp";
+
+---
+
+<Layout title="Servicios para Personas">
+  <Sectionhead backgroundImage={heroImage.src}>
+    <Fragment slot="title">Servicios para Personas</Fragment>
+    <Fragment slot="desc">Protección legal integral para ti y tu familia.</Fragment>
+  </Sectionhead>
+  <Container>
+    
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Asesoría Jurídica Personalizada.
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        En Aló Abogados Chile, ofrecemos una amplia gama de servicios legales para personas, garantizando que nuestros clientes reciban la mejor representación y asesoría posible en todas las áreas del derecho.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500 mt-4">
+        Nuestros abogados especializados están aquí para ayudarte en casos de derecho familiar, penal, civil y laboral, brindando soluciones efectivas y personalizadas para cada situación.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-12">
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-blue-500 rounded-full p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name="bx:bxs-user" />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">Abogado Familiar</h3>
+          <p class="text-slate-500 mt-2 leading-relaxed">
+            Asesoría en casos de divorcio, custodia de hijos, pensión alimenticia y otros temas relacionados con el derecho de familia.
+          </p>
+        </div>
+      </div>
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-red-500 rounded-full p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name="bx:bxs-shield" />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">Abogado Penal</h3>
+          <p class="text-slate-500 mt-2 leading-relaxed">
+            Defensa en casos penales, representación en juicios y asesoría en situaciones de delitos y faltas.
+          </p>
+        </div>
+      </div>
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-green-500 rounded-full p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name="bx:bxs-book" />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">Abogado Civil</h3>
+          <p class="text-slate-500 mt-2 leading-relaxed">
+            Asistencia en contratos, sucesiones, propiedades y otros asuntos civiles.
+          </p>
+        </div>
+      </div>
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-yellow-500 rounded-full p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name="bx:bxs-briefcase" />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">Abogado Laboral</h3>
+          <p class="text-slate-500 mt-2 leading-relaxed">
+            Asesoría en despidos, indemnizaciones, conflictos laborales y derechos del trabajador.
+          </p>
+        </div>
+      </div>
+    </div>
+  </Container>
+</Layout>

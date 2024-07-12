@@ -4,6 +4,7 @@ import { Picture } from "astro:assets";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
+import heroImage from "assets/Quienes_somos.webp";
 
 // Filter team entries with 'draft: false' & date before current date
 const publishedTeamMembers = await getCollection("team", ({ data }) => {
@@ -11,23 +12,36 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
 });
 ---
 
-<Layout title="About">
+<Layout title="Sobre Nosotros">
+  <Sectionhead backgroundImage={heroImage.src} >
+    <Fragment slot="title">Sobre Nosotros</Fragment>
+    <Fragment slot="desc">Somos un equipo apasionado dedicado a la asistencia legal.</Fragment>
+  </Sectionhead>
   <Container>
-    <Sectionhead>
-      <Fragment slot="title">About</Fragment>
-      <Fragment slot="desc">We are a small passionate team.</Fragment>
-    </Sectionhead>
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Comprometidos con tu Protección Legal.
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        En Aló Abogados Chile, somos un equipo multicultural de abogados y profesionales del derecho, dedicados a proporcionar asesoría jurídica integral y personalizada. Nuestra misión es proteger y defender los derechos de nuestros clientes, asegurando tranquilidad y seguridad legal.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500 mt-4">
+        Nuestra experiencia abarca diversas áreas del derecho, incluyendo derecho laboral, familiar, penal y civil. Nos enorgullecemos de nuestra capacidad para adaptarnos a las necesidades específicas de cada cliente, ofreciendo soluciones jurídicas eficaces y eficientes.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500 mt-4">
+        Creemos en la importancia de la accesibilidad y la educación legal. Por eso, además de nuestras consultas y representaciones jurídicas, ofrecemos recursos y herramientas educativas para empoderar a nuestros clientes con el conocimiento necesario para tomar decisiones informadas.
+      </p>
+    </div>
 
     <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
       <h2 class="font-bold text-3xl text-gray-800">
-        Empowering the world with Astro.
+        Conoce a Nuestro Equipo.
       </h2>
       <p class="text-lg leading-relaxed text-slate-500">
-        We're a multi-cultural team from around the world! We come from diverse
-        backgrounds, bringing different personalities, experiences and skills to
-        the job. This is what makes our team so special.
+        Nuestro equipo está compuesto por profesionales altamente capacitados y comprometidos con la excelencia. Aquí te presentamos a algunos de los miembros clave de nuestro equipo:
       </p>
     </div>
+
     <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
       {
         publishedTeamMembers.map((teamMemberEntry) => (
@@ -48,6 +62,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
               <h3 class="text-sm text-slate-500">
                 {teamMemberEntry.data.title}
               </h3>
+              <p class="text-slate-500 mt-2 leading-relaxed">{teamMemberEntry.data.description}</p>
             </div>
           </div>
         ))

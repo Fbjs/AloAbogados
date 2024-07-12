@@ -1,0 +1,53 @@
+---
+import heroImage1 from 'assets/aloabogados3.webp';
+import heroImage2 from 'assets/aloabogados4.webp';
+import heroImage3 from 'assets/aloabogados5.webp';
+import heroImage4 from 'assets/aloabogados6.webp';
+
+const images = [heroImage1, heroImage2, heroImage3, heroImage4];
+---
+
+<div class="relative h-screen flex items-center justify-center text-white overflow-hidden">
+  <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out bg-cover bg-center" id="jumbotron-bg" style={`background-image: url(${images[0]})`}></div>
+  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+  <div class="relative z-10 text-center p-8 bg-black bg-opacity-70 rounded-lg">
+    <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
+      ¡Duerme Tranquilo! Olvídate de tus deudas
+    </h1>
+    <p class="text-lg mt-4 text-white max-w-xl mx-auto">
+      Contáctanos gratis, Alo Abogados Chile te ayuda
+    </p>
+    <div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
+      <a href="https://web3templates.com/templates/astroship-starter-website-template-for-astro" target="_blank" class="flex gap-1 items-center justify-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" rel="noopener">
+        <span class="text-white w-5 h-5">📥</span>
+        Te Llamamos
+      </a>
+      <a href="https://github.com/surjithctly/astroship" target="_blank" class="flex gap-1 items-center justify-center bg-white text-black font-bold py-2 px-4 rounded" rel="noopener">
+        <span class="text-black w-4 h-4">💬</span>
+        Tu Consulta al WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+  if (typeof window !== 'undefined') {
+    const images = [
+      "assets/aloabogados3.webp",
+      "assets/aloabogados4.webp",
+      "assets/aloabogados5.webp",
+      "assets/aloabogados6.webp"
+    ];
+    let currentImageIndex = 0;
+
+    function changeImage() {
+      const jumbotron = document.getElementById('jumbotron-bg');
+      if (jumbotron) {
+        jumbotron.style.backgroundImage = `url(${images[currentImageIndex]})`;
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+      }
+    }
+
+    setInterval(changeImage, 1000);
+  }
+</script>

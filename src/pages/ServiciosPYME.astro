@@ -1,0 +1,76 @@
+---
+import { Icon } from "astro-icon/components";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import heroImage from "assets/personas3.webp";
+---
+
+<Layout title="Servicios para PYME">
+  <Sectionhead backgroundImage={heroImage.src} >
+    <Fragment slot="title">Servicios para PYME</Fragment>
+    <Fragment slot="desc">Soluciones legales efectivas para tu negocio.</Fragment>
+  </Sectionhead>
+  <Container>
+    
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-gray-800">
+        Apoyo Legal para Empresas.
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        En Aló Abogados Chile, entendemos las necesidades específicas de las pequeñas y medianas empresas. Ofrecemos servicios legales diseñados para apoyar y proteger tu negocio en todas las etapas de su desarrollo.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500 mt-4">
+        Nuestros abogados tienen amplia experiencia en derecho societario, insolvencia y reemprendimiento, seguros legales y comerciales. Estamos aquí para ayudarte a navegar cualquier desafío legal que enfrentes.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-12">
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-purple-500 rounded-full p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name="bx:bxs-briefcase" />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">Abogado Societario</h3>
+          <p class="text-slate-500 mt-2 leading-relaxed">
+            Asesoría en la constitución de sociedades, contratos mercantiles y reorganización empresarial.
+          </p>
+        </div>
+      </div>
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-indigo-500 rounded-full p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name="bx:bxs-error" />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">Insolvencia y Reemprendimiento</h3>
+          <p class="text-slate-500 mt-2 leading-relaxed">
+            Asesoría en procesos de insolvencia, reestructuración de deudas y apoyo en el reemprendimiento.
+          </p>
+        </div>
+      </div>
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-orange-500 rounded-full p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name="bx:bxs-shield" />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">Seguro Legal</h3>
+          <p class="text-slate-500 mt-2 leading-relaxed">
+            Cobertura legal para tu empresa, incluyendo representación jurídica y asesoría continua.
+          </p>
+        </div>
+      </div>
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-teal-500 rounded-full p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name="bx:bxs-business" />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">Seguro Comercial Reemprender</h3>
+          <p class="text-slate-500 mt-2 leading-relaxed">
+            Protección legal para tu negocio en casos comerciales, incluyendo recuperación y gestión de activos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </Container>
+</Layout>

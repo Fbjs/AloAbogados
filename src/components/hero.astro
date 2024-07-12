@@ -1,6 +1,6 @@
 ---
 import { Picture } from "astro:assets";
-import heroImage from "assets/hero.png";
+import heroImage from "assets/logo_aloabogados-removebg.png";
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon/components";
 ---
@@ -10,7 +10,7 @@ import { Icon } from "astro-icon/components";
   <div class="py-6 md:order-1 hidden md:block">
     <Picture
       src={heroImage}
-      alt="Astronaut in the air"
+      alt="Abogados trabajando en equipo"
       widths={[200, 400, 600]}
       sizes="(max-width: 800px) 100vw, 620px"
       loading="eager"
@@ -19,34 +19,30 @@ import { Icon } from "astro-icon/components";
   </div>
   <div>
     <h1
-      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      Marketing website done with Astro
+      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter text-sky-900">
+      Servicios Legales Profesionales
     </h1>
     <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      Astroship is a starter template for startups, marketing websites & landing
-      pages.<wbr /> Built with Astro.build and TailwindCSS. You can quickly
-      create any website with this starter.
+      Aló Abogados Chile ofrece asesoría jurídica telefónica o presencial, patrocinio legal, y asistencia legal ilimitada para ti y tu familia. Protege tus derechos con nuestros expertos en derecho civil, penal, laboral y más.
     </p>
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
       <Link
         href="#"
-        href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
+        href="https://www.aloabogadochile.cl"
         target="_blank"
-        class="flex gap-1 items-center justify-center"
+        class="flex gap-1 items-center justify-center bg-sky-500 text-sky-900 hover:bg-sky-900 hover:text-sky-500"
         rel="noopener">
-        <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />
-
-         Download for Free
+        <Icon class="text-sky-900 hover:text-sky-500 w-5 h-5" name="bx:bxs-cloud-download" />
+         Más Información
       </Link>
       <Link
         size="lg"
-        style="outline"
         rel="noopener"
-        href="https://github.com/surjithctly/astroship"
-        class="flex gap-1 items-center justify-center"
+        href="tel:+56997193049"
+        class="flex gap-1 items-center justify-center border-sky-900 bg-transparent text-sky-900"
         target="_blank">
-        <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
-         GitHub Repo
+        <Icon class="w-4 h-4 text-sky-900" name="bx:bx-phone" />
+         Contáctanos
       </Link>
     </div>
   </div>
