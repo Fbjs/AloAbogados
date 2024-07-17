@@ -7,7 +7,7 @@ import { Icon } from "astro-icon/components";
 
 <main
   class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
-  <div class="py-6 md:order-1 hidden md:block">
+  <div class="py-6 md:order-1 hidden md:block animate-fade-in-left">
     <Picture
       src={heroImage}
       alt="Abogados trabajando en equipo"
@@ -19,27 +19,27 @@ import { Icon } from "astro-icon/components";
   </div>
   <div>
     <h1
-      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter text-sky-900">
+      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter text-sky-900 animate-fade-in-right">
       Servicios Legales Profesionales
     </h1>
-    <p class="text-lg mt-4 text-slate-600 max-w-xl">
+    <p class="text-lg mt-4 text-slate-600 max-w-xl animate-fade-in-right">
       Aló Abogados Chile ofrece asesoría jurídica telefónica o presencial, patrocinio legal, y asistencia legal ilimitada para ti y tu familia. Protege tus derechos con nuestros expertos en derecho civil, penal, laboral y más.
     </p>
-    <div class="mt-6 flex flex-col sm:flex-row gap-3">
+    <div class="mt-6 flex flex-col sm:flex-row gap-3 animate-fade-in-right">
       <Link
         href="#"
         href="https://www.aloabogadochile.cl"
         target="_blank"
-        class="flex gap-1 items-center justify-center bg-sky-500 text-sky-900 hover:bg-sky-900 hover:text-sky-500"
+        class="flex gap-1 items-center justify-center bg-sky-500 text-white hover:bg-sky-800 hover:text-sky-500"
         rel="noopener">
-        <Icon class="text-sky-900 hover:text-sky-500 w-5 h-5" name="bx:bxs-cloud-download" />
+        <Icon class="text-sky-900 w-5 h-5" name="bx:bxs-cloud-download" />
          Más Información
       </Link>
       <Link
         size="lg"
         rel="noopener"
-        href="tel:+56997193049"
-        class="flex gap-1 items-center justify-center border-sky-900 bg-transparent text-sky-900"
+        href="tel:+56997193049" 
+        class="flex gap-1 items-center justify-center border-sky-900 bg-transparent text-sky-700 hover:text-sky-500"
         target="_blank">
         <Icon class="w-4 h-4 text-sky-900" name="bx:bx-phone" />
          Contáctanos
