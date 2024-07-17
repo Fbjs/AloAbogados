@@ -14,8 +14,6 @@ tags: [familia, derecho, abogados]
 
 ![Abogado Familiar](https://images.unsplash.com/photo-1542393545-10f5cde2c810?&fit=crop&w=430&h=240)
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
 ## La Importancia del Abogado Familiar
 
 El derecho familiar abarca una variedad de temas legales que afectan a las familias, incluyendo el divorcio, la custodia de los hijos, la adopción y más. Tener un abogado especializado en derecho familiar puede proporcionar la orientación y el apoyo necesarios para navegar por estos desafíos con confianza y seguridad.
