@@ -4,18 +4,16 @@ import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Layout from "@layouts/Layout.astro";
 import { Icon } from "astro-icon/components";
-import heroImage from "assets/Contacto.webp";
+import heroImage from "assets/Justice_hands.webp";
 
 ---
 
 <Layout title="Contacto">
-  <Sectionhead backgroundImage={heroImage.src} >
+  <Sectionhead backgroundImage={heroImage.src}>
     <Fragment slot="title">Contacto</Fragment>
     <Fragment slot="desc">Estamos aquí para ayudarte.</Fragment>
   </Sectionhead>
   <Container>
-    
-
     <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
       <div>
         <h2 class="font-medium text-2xl text-gray-800">Contacta a Aló Abogados Chile</h2>
@@ -53,5 +51,9 @@ import heroImage from "assets/Contacto.webp";
         <Contactform />
       </div>
     </div>
+    <div class="mt-10 mx-auto max-w-4xl">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.451399647468!2d-70.65210892494926!3d-33.43754429685028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a30909e7d3%3A0x428ad0476d5a809f!2sP.%C2%BA%20Phillips%2040%2C%20Santiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1sen!2scl!4v1721320161655!5m2!1sen!2scl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
   </Container>
 </Layout>
+

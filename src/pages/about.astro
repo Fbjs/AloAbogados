@@ -4,7 +4,7 @@ import { Picture } from "astro:assets";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
-import heroImage from "assets/Quienes_somos.webp";
+import heroImage from "assets/about_2.webp";
 
 // Filter team entries with 'draft: false' & date before current date
 const publishedTeamMembers = await getCollection("team", ({ data }) => {
@@ -33,16 +33,16 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
       </p>
     </div>
 
-    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+    <!--div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
       <h2 class="font-bold text-3xl text-gray-800">
         Conoce a Nuestro Equipo.
       </h2>
       <p class="text-lg leading-relaxed text-slate-500">
         Nuestro equipo está compuesto por profesionales altamente capacitados y comprometidos con la excelencia. Aquí te presentamos a algunos de los miembros clave de nuestro equipo:
       </p>
-    </div>
+    </div-->
 
-    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
+    <!--div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
       {
         publishedTeamMembers.map((teamMemberEntry) => (
           <div class="group">
@@ -67,6 +67,6 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
           </div>
         ))
       }
-    </div>
+    </div-->
   </Container>
 </Layout>
